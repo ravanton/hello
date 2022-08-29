@@ -9,10 +9,17 @@
     <body>
         <div id="app"></div>
         <script type="text/babel">
+            function Hello (props){
+                return(
+                    <h1>Hello, {props.name}!</h1>
+                );
+            }
             function App (){
                 return (
                     <div>
-                        Hello!
+                        <Hello name="Hermione" />
+                        <Hello name="Harry" />
+                        <Hello name="Ron" />
                     </div>
                 );
             }
